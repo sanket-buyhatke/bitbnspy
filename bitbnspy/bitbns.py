@@ -371,3 +371,7 @@ class bitbns():
                 return self.makePostRequest2('getOptionsbalance', body)
         else:
             return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
+
+    def listAllInstruments(self):
+        body = {'symbol':''}
+        return self.makePostRequest2('listAllInstruments', body)
