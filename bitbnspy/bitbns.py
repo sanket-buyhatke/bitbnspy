@@ -285,81 +285,81 @@ class bitbns():
         if self.requestAuthenticate(symbol) and self.verifyApiKeys(self.apiKeys):
             return self.makePostRequest(symbol, "listExecutedOrders", body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def placeOrders(self, orders_obj):
         body = orders_obj.copy()
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             return self.makePostRequest2('orders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def getOrders(self, orders_obj):
         body = orders_obj
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             return self.makePostRequest2('getordersnew', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def cancelOrders(self, orders_obj):
         body = orders_obj
         if self.requestAuthenticate(orders_obj) and self.verifyApiKeys(self.apiKeys):
             return self.makePostRequest2('cancel', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def getTokenSocket(self):
         body = dict()
         if self.requestAuthenticate('USAGE') and self.verifyApiKeys(self.apiKeys):
             return self.makePostRequest('USAGE', "getOrderSocketToken", body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def placeMarginOrders(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def cancelMarginOrder(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def settleMarginPartial(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def settleMargin(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def listMarginExecuted(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def listMarginPending(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
 
     def listMarginMarketOrders(self, orders_obj):
         if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
             body = orders_obj.copy()
             return self.makePostRequest2('marginOrders', body)
         else:
-            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please intialize it first')
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
