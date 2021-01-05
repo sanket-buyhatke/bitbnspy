@@ -363,3 +363,11 @@ class bitbns():
             return self.makePostRequest2('marginOrders', body)
         else:
             return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
+
+    ######### BITBNS OPTIONS #############
+    def getOptionsBalance(self):
+        body = {'symbol':''}
+        if self.verifyApiKeys(self.apiKeys):
+                return self.makePostRequest2('getOptionsbalance', body)
+        else:
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
