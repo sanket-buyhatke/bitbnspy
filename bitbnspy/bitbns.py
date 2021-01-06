@@ -375,3 +375,10 @@ class bitbns():
     def listAllInstruments(self):
         body = {'symbol':''}
         return self.makePostRequest2('listAllInstruments', body)
+
+    def placeOptionOrder(self, orders_obj):
+        if self.requestAuthenticate2(orders_obj) and self.verifyApiKeys(self.apiKeys):
+            body = orders_obj.copy()
+            return self.makePostRequest2('optionNewOrder', body)
+        else:
+            return self.genErrorMessage(None, 0, 'apiKeys Not Found , Please initialize it first')
