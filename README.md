@@ -2316,6 +2316,665 @@ status -> for successful request the status is 1
   </pre>
 </details>
 
+--------
+
+## **__Options Trading APIs__**
+
+<pre>
+<b>List all options instruments</b>
+
+bitbnsObj.listAllInstruments()
+
+</pre>
+
+<details>
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+      "msg": "List of instruments",
+      "status": 1,
+      "code": 200,
+      "data": {
+        "BTC-8JAN21-23500-C": "1360",
+        "BTC-8JAN21-22000-C": "1362",
+        "BTC-8JAN21-27000-P": "1369",
+        "BTC-8JAN21-19000-P": "1370",
+        "BTC-8JAN21-22000-P": "1371",
+        "BTC-8JAN21-24000-P": "1372",
+        "BTC-8JAN21-29000-P": "1374",
+        "BTC-8JAN21-30000-P": "1376",
+        "BTC-8JAN21-23000-C": "1377",
+        "BTC-8JAN21-26500-P": "1378",
+        "BTC-8JAN21-23000-P": "1379",
+        "BTC-8JAN21-21500-P": "1380",
+        "BTC-8JAN21-28500-C": "1383",
+        "BTC-8JAN21-24500-P": "1384",
+        "BTC-8JAN21-28000-P": "1388",
+        "BTC-8JAN21-29500-C": "1390",
+        "BTC-8JAN21-21000-P": "1393",
+        "BTC-8JAN21-28500-P": "1397",
+        "BTC-8JAN21-30000-C": "1398",
+        "BTC-8JAN21-29000-C": "1399",
+        "BTC-8JAN21-22500-P": "1403",
+        "BTC-8JAN21-24500-C": "1407",
+        "BTC-8JAN21-21000-C": "1409",
+        "BTC-8JAN21-19500-P": "1411",
+        "BTC-8JAN21-26500-C": "1412",
+        "BTC-8JAN21-25500-C": "1413",
+        "BTC-8JAN21-27000-C": "1417",
+        "BTC-8JAN21-29500-P": "1418",
+        "BTC-8JAN21-27500-C": "1419",
+        "BTC-8JAN21-23500-P": "1420",
+        "BTC-8JAN21-21500-C": "1423",
+        "BTC-8JAN21-19500-C": "1426",
+        "BTC-8JAN21-25000-C": "1428",
+        "BTC-8JAN21-28000-C": "1429",
+        "BTC-8JAN21-26000-C": "1431",
+        "BTC-8JAN21-20000-C": "1433",
+        "BTC-8JAN21-24000-C": "1434",
+        "BTC-8JAN21-25500-P": "1435",
+        "BTC-8JAN21-20000-P": "1436",
+        "BTC-8JAN21-25000-P": "1440",
+        "BTC-8JAN21-20500-P": "1441",
+        "BTC-8JAN21-19000-C": "1442",
+        "BTC-8JAN21-20500-C": "1444",
+        "BTC-8JAN21-26000-P": "1445",
+        "BTC-8JAN21-22500-C": "1447",
+        "BTC-8JAN21-27500-P": "1448",
+        "BTC-8JAN21-30500-C": "1454",
+        "BTC-8JAN21-30500-P": "1456",
+        "BTC-8JAN21-31000-P": "1459",
+        "BTC-8JAN21-31000-C": "1461",
+        "BTC-8JAN21-31500-P": "1472",
+        "BTC-8JAN21-31500-C": "1473",
+        "BTC-8JAN21-33000-C": "1478",
+        "BTC-8JAN21-32000-P": "1480",
+        "BTC-8JAN21-32000-C": "1481",
+        "BTC-8JAN21-33000-P": "1482",
+        "BTC-8JAN21-34000-C": "1486",
+        "BTC-8JAN21-36000-C": "1487",
+        "BTC-8JAN21-34000-P": "1491",
+        "BTC-8JAN21-36000-P": "1492",
+        "BTC-8JAN21-40000-P": "1497",
+        "BTC-8JAN21-40000-C": "1498",
+        "BTC-8JAN21-16000-P": "1511",
+        "BTC-8JAN21-16000-C": "1515",
+        "BTC-8JAN21-18000-C": "1521",
+        "BTC-8JAN21-18000-P": "1522",
+        "BTC-15JAN21-28000-P": "1766",
+        "BTC-15JAN21-20000-P": "1772",
+        "BTC-15JAN21-24000-P": "1773",
+        "BTC-15JAN21-28000-C": "1774",
+        "BTC-15JAN21-22000-P": "1775",
+        "BTC-15JAN21-32000-P": "1778",
+        "BTC-15JAN21-22000-C": "1779",
+        "BTC-15JAN21-32000-C": "1781",
+        "BTC-15JAN21-30000-C": "1784",
+        "BTC-15JAN21-20000-C": "1785",
+        "BTC-15JAN21-30000-P": "1786",
+        "BTC-15JAN21-34000-C": "1792",
+        "BTC-15JAN21-26000-P": "1793",
+        "BTC-15JAN21-34000-P": "1794",
+        "BTC-15JAN21-24000-C": "1803",
+        "BTC-15JAN21-26000-C": "1814",
+        "BTC-15JAN21-23000-C": "1873",
+        "BTC-15JAN21-27000-C": "1874",
+        "BTC-15JAN21-21000-P": "1875",
+        "BTC-15JAN21-25000-P": "1876",
+        "BTC-15JAN21-29000-P": "1877",
+        "BTC-15JAN21-23000-P": "1878",
+        "BTC-15JAN21-21000-C": "1879",
+        "BTC-15JAN21-29000-C": "1880",
+        "BTC-15JAN21-25000-C": "1881",
+        "BTC-15JAN21-27000-P": "1882",
+        "BTC-15JAN21-36000-C": "1883",
+        "BTC-15JAN21-36000-P": "1884",
+        "BTC-15JAN21-38000-C": "1943",
+        "BTC-15JAN21-38000-P": "1944",
+        "BTC-8JAN21-38000-C": "2007",
+        "BTC-15JAN21-40000-C": "2008",
+        "BTC-8JAN21-38000-P": "2009",
+        "BTC-15JAN21-40000-P": "2010",
+        "BTC-29JAN21-17000-C": "2131",
+        "BTC-29JAN21-8000-C": "2132",
+        "BTC-29JAN21-10000-P": "2133",
+        "BTC-29JAN21-8000-P": "2134",
+        "BTC-29JAN21-20000-C": "2135",
+        "BTC-29JAN21-18000-C": "2136",
+        "BTC-29JAN21-10000-C": "2137",
+        "BTC-29JAN21-34000-C": "2138",
+        "BTC-29JAN21-22000-P": "2139",
+        "BTC-29JAN21-34000-P": "2140",
+        "BTC-29JAN21-27000-P": "2141",
+        "BTC-29JAN21-24000-P": "2142",
+        "BTC-29JAN21-25000-C": "2143",
+        "BTC-29JAN21-16000-P": "2144",
+        "BTC-29JAN21-25000-P": "2145",
+        "BTC-29JAN21-28000-P": "2146",
+        "BTC-29JAN21-32000-P": "2147",
+        "BTC-29JAN21-23000-C": "2148",
+        "BTC-29JAN21-21000-C": "2149",
+        "BTC-29JAN21-26000-P": "2150",
+        "BTC-29JAN21-19000-P": "2151",
+        "BTC-29JAN21-12000-P": "2152",
+        "BTC-29JAN21-30000-P": "2153",
+        "BTC-29JAN21-18000-P": "2154",
+        "BTC-29JAN21-16000-C": "2155",
+        "BTC-29JAN21-24000-C": "2156",
+        "BTC-29JAN21-23000-P": "2157",
+        "BTC-29JAN21-44000-C": "2158",
+        "BTC-29JAN21-28000-C": "2159",
+        "BTC-29JAN21-22000-C": "2160",
+        "BTC-29JAN21-52000-C": "2161",
+        "BTC-29JAN21-17000-P": "2162",
+        "BTC-29JAN21-40000-P": "2163",
+        "BTC-29JAN21-52000-P": "2164",
+        "BTC-29JAN21-20000-P": "2165",
+        "BTC-29JAN21-27000-C": "2166",
+        "BTC-29JAN21-36000-C": "2167",
+        "BTC-29JAN21-36000-P": "2168",
+        "BTC-29JAN21-19000-C": "2169",
+        "BTC-29JAN21-14000-P": "2170",
+        "BTC-29JAN21-12000-C": "2171",
+        "BTC-29JAN21-48000-P": "2172",
+        "BTC-29JAN21-48000-C": "2173",
+        "BTC-29JAN21-21000-P": "2174",
+        "BTC-29JAN21-14000-C": "2175",
+        "BTC-29JAN21-32000-C": "2176",
+        "BTC-29JAN21-44000-P": "2177",
+        "BTC-29JAN21-26000-C": "2178",
+        "BTC-29JAN21-30000-C": "2179",
+        "BTC-29JAN21-40000-C": "2180",
+        "BTC-22JAN21-26000-P": "2182",
+        "BTC-15JAN21-31000-P": "2186",
+        "BTC-22JAN21-30000-P": "2188",
+        "BTC-22JAN21-38000-C": "2191",
+        "BTC-22JAN21-31000-P": "2193",
+        "BTC-15JAN21-33000-P": "2194",
+        "BTC-22JAN21-32000-P": "2195",
+        "BTC-22JAN21-42000-P": "2197",
+        "BTC-22JAN21-24000-C": "2198",
+        "BTC-22JAN21-42000-C": "2202",
+        "BTC-22JAN21-40000-C": "2204",
+        "BTC-22JAN21-27000-C": "2205",
+        "BTC-22JAN21-26000-C": "2208",
+        "BTC-22JAN21-40000-P": "2215",
+        "BTC-22JAN21-31000-C": "2217",
+        "BTC-22JAN21-29000-P": "2218",
+        "BTC-22JAN21-34000-C": "2219",
+        "BTC-22JAN21-28000-C": "2222",
+        "BTC-22JAN21-28000-P": "2224",
+        "BTC-22JAN21-33000-P": "2225",
+        "BTC-22JAN21-38000-P": "2227",
+        "BTC-22JAN21-36000-P": "2229",
+        "BTC-22JAN21-29000-C": "2232",
+        "BTC-22JAN21-25000-P": "2233",
+        "BTC-15JAN21-33000-C": "2234",
+        "BTC-15JAN21-31000-C": "2238",
+        "BTC-22JAN21-32000-C": "2241",
+        "BTC-22JAN21-25000-C": "2246",
+        "BTC-22JAN21-33000-C": "2247",
+        "BTC-22JAN21-30000-C": "2251",
+        "BTC-22JAN21-36000-C": "2253",
+        "BTC-22JAN21-34000-P": "2256",
+        "BTC-22JAN21-24000-P": "2258",
+        "BTC-22JAN21-27000-P": "2262",
+        "BTC-22JAN21-22000-P": "2265",
+        "BTC-22JAN21-22000-C": "2266",
+        "BTC-22JAN21-48000-C": "2417",
+        "BTC-15JAN21-44000-P": "2418",
+        "BTC-22JAN21-44000-P": "2419",
+        "BTC-15JAN21-44000-C": "2420",
+        "BTC-22JAN21-48000-P": "2421",
+        "BTC-22JAN21-44000-C": "2422",
+        "BTC-29JAN21-56000-C": "2423",
+        "BTC-29JAN21-56000-P": "2424",
+        "BTC-8JAN21-44000-C": "2425",
+        "BTC-8JAN21-44000-P": "2426",
+        "BTC-15JAN21-48000-P": "2427",
+        "BTC-15JAN21-48000-C": "2428",
+        "BTC-22JAN21-52000-P": "2431",
+        "BTC-22JAN21-52000-C": "2432",
+        "BTC-6JAN21-36000-P": "2477",
+        "BTC-6JAN21-32500-C": "2478",
+        "BTC-6JAN21-31000-P": "2479",
+        "BTC-6JAN21-34000-C": "2480",
+        "BTC-6JAN21-32000-C": "2481",
+        "BTC-6JAN21-30500-C": "2482",
+        "BTC-6JAN21-32000-P": "2483",
+        "BTC-6JAN21-29000-C": "2484",
+        "BTC-6JAN21-31000-C": "2485",
+        "BTC-6JAN21-35500-C": "2486",
+        "BTC-6JAN21-34500-P": "2487",
+        "BTC-6JAN21-33000-P": "2488",
+        "BTC-6JAN21-29000-P": "2489",
+        "BTC-6JAN21-35500-P": "2490",
+        "BTC-6JAN21-36000-C": "2491",
+        "BTC-6JAN21-35000-P": "2492",
+        "BTC-6JAN21-31500-C": "2493",
+        "BTC-6JAN21-34500-C": "2494",
+        "BTC-6JAN21-30500-P": "2495",
+        "BTC-6JAN21-33500-P": "2496",
+        "BTC-6JAN21-33000-C": "2497",
+        "BTC-6JAN21-33500-C": "2498",
+        "BTC-6JAN21-34000-P": "2499",
+        "BTC-6JAN21-30000-P": "2500",
+        "BTC-6JAN21-29500-C": "2501",
+        "BTC-6JAN21-31500-P": "2502",
+        "BTC-6JAN21-30000-C": "2503",
+        "BTC-6JAN21-29500-P": "2504",
+        "BTC-6JAN21-32500-P": "2505",
+        "BTC-6JAN21-35000-C": "2506",
+        "BTC-6JAN21-28500-P": "2507",
+        "BTC-6JAN21-28500-C": "2508",
+        "BTC-6JAN21-28000-P": "2511",
+        "BTC-6JAN21-28000-C": "2512",
+        "BTC-6JAN21-27500-P": "2515",
+        "BTC-6JAN21-27500-C": "2516",
+        "BTC-6JAN21-26000-C": "2518",
+        "BTC-6JAN21-26000-P": "2520",
+        "BTC-6JAN21-27000-P": "2521",
+        "BTC-6JAN21-26500-C": "2524",
+        "BTC-22JAN21-20000-C": "2527",
+        "BTC-6JAN21-27000-C": "2528",
+        "BTC-6JAN21-25500-P": "2529",
+        "BTC-22JAN21-20000-P": "2530",
+        "BTC-6JAN21-25500-C": "2532",
+        "BTC-6JAN21-26500-P": "2533",
+        "BTC-7JAN21-34000-C": "2535",
+        "BTC-7JAN21-33500-P": "2536",
+        "BTC-7JAN21-29000-P": "2537",
+        "BTC-7JAN21-34500-P": "2538",
+        "BTC-7JAN21-31000-C": "2539",
+        "BTC-7JAN21-29000-C": "2540",
+        "BTC-7JAN21-28000-P": "2541",
+        "BTC-7JAN21-28500-C": "2542",
+        "BTC-7JAN21-33000-P": "2543",
+        "BTC-7JAN21-30000-P": "2544",
+        "BTC-7JAN21-31500-P": "2545",
+        "BTC-7JAN21-33500-C": "2546",
+        "BTC-7JAN21-29500-P": "2547",
+        "BTC-7JAN21-33000-C": "2548",
+        "BTC-7JAN21-28500-P": "2549",
+        "BTC-7JAN21-30000-C": "2550",
+        "BTC-7JAN21-31500-C": "2551",
+        "BTC-7JAN21-32000-P": "2552",
+        "BTC-7JAN21-31000-P": "2553",
+        "BTC-7JAN21-34500-C": "2554",
+        "BTC-7JAN21-32500-P": "2555",
+        "BTC-7JAN21-28000-C": "2556",
+        "BTC-7JAN21-34000-P": "2557",
+        "BTC-7JAN21-30500-P": "2558",
+        "BTC-7JAN21-32500-C": "2559",
+        "BTC-7JAN21-29500-C": "2560",
+        "BTC-7JAN21-30500-C": "2561",
+        "BTC-7JAN21-32000-C": "2562",
+        "BTC-7JAN21-35000-C": "2563",
+        "BTC-7JAN21-35000-P": "2564",
+        "BTC-7JAN21-35500-C": "2565",
+        "BTC-7JAN21-35500-P": "2566"
+  }
+}
+
+Explanation of fields:
+data -> the custom message
+entry_id -> the unique id assigned to the order
+days -> number of days lent or borrowed
+btc -> the volume of the coin
+type -> 1 for borrow and 0 for lend order
+rate -> the rate at which the margin is lend or borrowed
+status -> for successful request the status is 1
+  </pre>
+</details>
+
+
+<pre>
+<b>get options wallet balance</b>
+
+bitbnsObj.getOptionsBalance()
+
+Pass id of the margin transaction you are looking to settle
+
+</pre>
+
+<details>
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+      "data":{
+          "BTC":{
+            "balance":0.9988,
+            "inobalance":0,
+            "lockbalance":0,
+            "freezebalance":0
+          }
+      },
+      "status":1,
+      "error":"None",
+      "code":200
+    }
+
+Explanation of fields:
+balance -> total account balance
+inobalance -> balance currently held in order at any given time t,
+               value updates at every price change.
+lockbalance -> balance currently locked for maintainace margin
+               and order
+freezebalance -> balance currently held, considers maintaince margin
+error -> the custom message
+status -> for successful request the status is 1
+  </pre>
+</details>
+
+
+<pre>
+<b>Place options BUY/SELL order</b>
+
+bitbnsObj.placeOptionOrder({
+        'side': 'BUY',
+        'prem': 0.001,
+        'qnty': 0.005,
+        'instrument': 'BTC-6JAN21-32500-P',
+        'symbol': 'BTC'
+    })
+
+side -> BUY/SELL
+prem -> premium to be paid on the options
+qnty -> order volume/quantity
+instrument -> name of the instrument
+symbol -> symbol of the options market
+
+</pre>
+
+<details>
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+    "status": 1,
+    "error": "Successfully placed a buy order",
+    "code": 200
+  }
+
+Explanation of fields:
+error -> the custom message
+status -> for successful request the status is 1
+  </pre>
+</details>
+
+
+
+<pre>
+<b>Get options order details</b>
+
+bitbnsObj.bitbnsObj.listOptionDetails({
+    'symbol': 'BTC',
+    'side': 'OPEN'
+})
+
+side -> OPEN, ORDER, TRADE, POSITION
+    OPEN -> get open orders
+    ORDER -> get all order history
+    TRADE -> get exceuted trade list
+    POSITION -> get current options positions
+symbol -> symbol of the options market
+
+</pre>
+
+<details>
+  <summary>
+   View Response - OPEN
+  </summary>
+  <pre>
+    {
+   "data":[
+      {
+         "id":893,
+         "ins_id":2505,
+         "qnty":0.005,
+         "qnty_rem":0.005,
+         "prem":0.001,
+         "type":0,
+         "initial_margin":1e-05,
+         "order_time":"2021-01-06T04:08:06.000Z"
+      }
+   ],
+   "status":1,
+   "error":"None",
+   "code":200
+}
+
+Explanation of fields:
+id -> order id
+ins_id -> instrument id
+qnty -> order quanty
+qnty_rem -> remaining order quantity
+prem -> options premium amount
+type -> 0 = BUY, 1 = SELL
+initial_margin -> Margin reserved for your open positions and open orders.
+                  If your Margin Balance falls below Initial Margin requirements,
+                  open orders that would increase your position get cancelled and
+                  you will only be able to place orders that reduce your position.
+order_time -> time at which order was placed
+  </pre>
+</details>
+
+<details>
+  <summary>
+   View Response - ORDER
+  </summary>
+  <pre>
+    {
+   "code":200,
+   "data":[
+      {
+         "id":894,
+         "initial_margin":7.582e-05,
+         "ins_id":2505,
+         "order_time":"2021-01-06T05:35:31.000Z",
+         "prem":0.001,
+         "qnty":0.0055,
+         "qnty_rem":0.0005,
+         "status":0,
+         "type":1
+      }
+   ],
+   "error":"None",
+   "status":1
+}
+
+Explanation of fields:
+id -> order id
+initial_margin -> Margin reserved for your open positions and open orders.
+                  If your Margin Balance falls below Initial Margin requirements,
+                  open orders that would increase your position get cancelled and
+                  you will only be able to place orders that reduce your position.
+ins_id -> instrument id
+order_time -> time at which order was placed
+prem -> options premium amount
+qnty -> order quanty
+qnty_rem -> remaining order quantity
+type -> 0 = BUY, 1 = SELL
+
+  </pre>
+</details>
+
+<details>
+  <summary>
+   View Response - TRADE
+  </summary>
+  <pre>
+    {
+   "code":200,
+   "data":[
+      {
+         "entry_id":392,
+         "id":894,
+         "ins_id":2505,
+         "prem":0.001,
+         "qnty":0.0005,
+         "status":1,
+         "time":"2021-01-06T11:50:56.193Z",
+         "type":1
+      }
+   ],
+   "error":"None",
+   "status":1
+}
+
+Explanation of fields:
+id -> order id
+ins_id -> instrument id
+time -> time at which order was executed
+prem -> options premium amount
+qnty -> order quanty
+qnty_rem -> remaining order quantity
+type -> 0 = BUY, 1 = SELL
+  </pre>
+</details>
+
+<details>
+  <summary>
+   View Response - POSITION
+  </summary>
+  <pre>
+    {
+   "code":200,
+   "data":[
+      {
+         "avg_price":0.001,
+         "init_margin":7.531e-05,
+         "ins_id":2505,
+         "last_updated":"2021-01-06T05:50:59.000Z",
+         "main_margin":3.781e-05,
+         "pos_id":198,
+         "position":-0.0005
+      }
+   ],
+   "error":"None",
+   "status":1
+}
+
+Explanation of fields:
+avg_price -> average price at the order was filled
+initial_margin -> Margin reserved for your open positions and open orders.
+                  If your Margin Balance falls below Initial Margin requirements,
+                  open orders that would increase your position get cancelled and
+                  you will only be able to place orders that reduce your position.
+ins_id -> instrument id
+last_updated -> time at which status was updated
+prem -> options premium amount
+pos_id -> id of the psition
+position -> current options position.
+  </pre>
+</details>
+
+
+<pre>
+<b>Cancel options order by order id</b>
+
+bitbnsObj.cancelOptionOrder({
+    'order_id': 896,
+    'symbol': 'BTC',
+    'side': 'INDIVIDUAL'
+})
+
+
+order_id -> order id of the options order
+symbol -> symbol of the options market
+side -> INDIVIDUAL
+
+</pre>
+
+<details>
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+   "code":200,
+   "error":"Successfully cancelled requested order",
+   "status":1
+}
+
+Explanation of fields:
+error -> the custom message
+status -> for successful request the status is 1
+  </pre>
+</details>
+
+<pre>
+<b>Cancel options order by instrument id</b>
+
+bitbnsObj.cancelOptionOrder({
+    'instrument': 'BTC-6JAN21-30000-P',
+    'symbol': 'BTC',
+    'side': 'INSTRUMENT'
+})
+
+instrument -> instrument id of the options
+symbol -> symbol of the options market
+side -> INSTRUMENT
+
+</pre>
+
+<details>
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+   "code":200,
+   "error":"Successfully cancelled requested order",
+   "status":1
+}
+
+Explanation of fields:
+error -> the custom message
+status -> for successful request the status is 1
+  </pre>
+</details>
+
+<pre>
+<b>Cancel all options orders</b>
+
+bitbnsObj.cancelOptionOrder({
+    'symbol': 'BTC',
+    'side': 'ALL'
+})
+
+
+symbol -> symbol of the options market
+side -> ALL
+
+</pre>
+
+<details>
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+   "code":200,
+   "error":"Successfully cancelled requested order",
+   "status":1
+}
+
+Explanation of fields:
+error -> the custom message
+status -> for successful request the status is 1
+  </pre>
+</details>
+
+--------
+
+
+
 <h2>HTTP error status codes </h2>
 <h3> HTTP error codes would be returned incase of any errors, the body will also cointain an error feild which will explain the cause of the error</h3>
 <div id ="HTTP_error_code_table" style ="border:1px solid">
